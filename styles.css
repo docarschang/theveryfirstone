@@ -72,10 +72,88 @@ h1 {
   color: var(--color-accent);
 }
 
-.intro {
-  margin: 10px 0 0;
-  color: var(--color-muted);
+.daily-quote {
+  min-height: 48px;
+  margin-top: 12px;
+  padding-left: 12px;
+  border-left: 2px solid var(--color-accent);
+}
+
+.quote-chinese {
+  margin: 0;
+  color: var(--color-ink);
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.quote-english {
+  margin: 3px 0 0;
+  color: var(--color-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.date-toolbar {
+  margin-bottom: 18px;
+}
+
+.date-toolbar > label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.date-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.date-input {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  padding: 0 10px;
+  color: var(--color-ink);
+  background: #fafbf9;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  outline: none;
+}
+
+.date-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgb(40 120 168 / 14%);
+}
+
+.date-step-button,
+.today-button {
+  height: 38px;
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  background: var(--color-soft-accent);
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.date-step-button {
+  width: 36px;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.today-button {
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.date-step-button:hover,
+.today-button:hover {
+  background: #dcecf5;
 }
 
 .todo-form {
